@@ -1,0 +1,319 @@
+!!! === $ $ ; setting, block separator, variable start and end, comment start marker
+=== q_Version
+Версия
+=== q_about_text
+<div>
+Свободное и открытое программное обеспечение (FOSS), распространяемое под лицензией GNU AGPL v3.<br>
+Оно также может содержать код, лицензированный под другой лицензией.<br>
+Дополнительную информацию см. в файле LICENSE.<br>
+</div>
+<br>
+<div>
+Автор этой версии: <a href="https://github.com/SumanthC10">github.com/SumanthC10</a><br>
+Соавтор этой версии: <a href="https://github.com/AndreyKaiu">github.com/AndreyKaiu</a><br>
+Авторы оригинального кода:<br>
+аддон <a href="https://ankiweb.net/shared/info/1020366288">'Edit Field During Review'</a> автор <a href="https://github.com/kelciour/">github.com/kelciour</a>;<br>
+аддон <a href="https://ankiweb.net/shared/info/385888438">'Edit Field During Review (Cloze)'</a> автор <a href="https://github.com/BlueGreenMagick">github.com/BlueGreenMagick</a>;<br>
+</div>
+=== q_tutorial
+<h3>Краткое руководство</h3>
+
+<h4>Начальная настройка</h4>
+<div class="section">
+1. Откройте конфигурацию дополнения и перейдите на вкладку <b>Поля</b> (<b>Fields</b>)<br>
+2. Для каждого типа записи отметьте поля, которые вы хотите сделать редактируемыми<br>
+3. Готово! Теперь <span class="shortcut">Ctrl + Click</span> по любому полю, чтобы отредактировать его
+</div>
+
+<h4>Палитра команд</h4>
+<div class="section">
+<span class="shortcut">Ctrl+.</span> - Открыть доступную для поиска палитру команд со ВСЕМИ действиями
+</div>
+
+<h4>Удаление заполнения пропусков (cloze)</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+R</span> - Убрать пропуск в позиции курсора/выделения</li>
+<li><span class="shortcut">Ctrl+Shift+U</span> - Убрать ВСЕ пропуски в поле</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+R</span> - Убрать пропуск с тем же номером</li>
+</ul>
+
+<h4>Нумерация заполнения пропусков</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+Alt+K</span> - Увеличить номер</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+J</span> - Уменьшить номер</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+N</span> - Перенумеровать (затем нажать 1-9)</li>
+</ul>
+
+<h4>Подсказки</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+L</span> - Добавить/редактировать подсказку</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+L</span> - Удалить подсказку</li>
+<li><span class="shortcut">Ctrl+Shift+W</span> - Подсказка с количеством слов</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+S</span> - Использовать выделение как подсказку</li>
+</ul>
+
+<h4>Структура заполнения пропусков</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+S</span> - Разделить заполнение пропусков в месте выделения</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+M</span> - Объединить заполнения пропусков с одинаковыми номерами</li>
+<li><span class="shortcut">Ctrl+Shift+O</span> - Вынести выделение из заполнения пропусков</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+O</span> - Поместить выделение в заполнение пропусков</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+I</span> - Преобразовать изображение в заполнение пропусков</li>
+</ul>
+
+<h4>Навигация</h4>
+<ul>
+<li><span class="shortcut">Ctrl+[</span> - Перейти к предыдущему заполнению пропусков</li>
+<li><span class="shortcut">Ctrl+]</span> - Перейти к следующему заполнению пропусков</li>
+<li><span class="shortcut">Ctrl+Shift+[</span> - Перейти к началу пропуска</li>
+<li><span class="shortcut">Ctrl+Shift+]</span> - Перейти в конец пропуска</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+,</span> - Перейти к началу поля (или [Ctrl+Home])</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+.</span> - Перейти в конец поля (или [Ctrl+End])</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+F</span> - Воспроизвести вопрос (показать лицевую сторону)</li>
+</ul>
+
+<h4>Инструменты</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+Alt+T</span> - Включить/выключить оверлей с информацией о заполнении пропусков</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+Y</span> - Скопировать содержимое пропуска (и выделит)</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+P</span> - Предварительный просмотр карточки</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+G</span> - Найти и заменить в заполнениях пропусков</li>
+<li><span class="shortcut">Ctrl+Shift+G</span> - Предложить кандидатов для заполнения пропусков</li>
+</ul>
+
+<p style="text-align: center; color: #888; margin-top: 20px;">
+Совет: Используйте <span class="shortcut">Ctrl+.</span> для поиска всех команд!
+</p>
+
+<h4>Некоторые важные изменения и дополнения</h4>
+<p>
+Исходный код аддона в основновном поддерживал только простой текст внутри cloze.<br> 
+В этой же версии аддона внесены изменения для возможно более корректной работы с HTML кодом внутри cloze.<br>
+Обработка вставленного текста для изображений и HTML может быть переключена по `Alt+V`. Это важно знать, чтобы можно было вставлять какие-то части HTML текста.<br>
+Можно показать информацию о заполнении cloze и частично посмотреть код HTML около курсора, чтобы лучше понимать какое там форматирование в реальности.<br>
+Добавлена команда `removeformatALL` (Ctrl + Shift + -) которая удалит любые теги (если не выделен текст, то удаляет 1 тег). Стандартая команда `removeformat` тоже есть, но удаляет она только основные, но не все теги.<br>
+Добавлена возможность ввода символа неразрывного пробела (Ctrl + Shift + Space), так как иногда это надо.<br>
+Добавлены команды ввода тегов `&lt;w0&gt;...&lt;w9&gt;` для ваших каких-то стилей или же вы можете это использовать для своих тегов. Символы $$ — это место вставки текста который вы веделяете.<br>
+<br>
+В связи с большим количеством команд и сложностью кода для работы с HTML, возможны какие-то ошибки в форматировании. Проверяйте какой HTML код у курсора (панель внизу экрана Ctrl+Shift+Alt+T).<br>
+</p>
+=== q_Help
+Справка
+=== q_General
+Общие
+=== q_Ctrl_Click_to_edit_field
+Ctrl + Click для редактирования поля (Cmd на Mac)
+=== q_If_not_checked_there_is
+Если не отмечено, не нужно нажимать Ctrl
+=== q_Show_a_blue_outline
+Показывать синий контур вокруг поля при редактировании
+=== q_Process_pasted_content_for_images_and_HTML
+Обрабатывать вставленное содержимое для изображений и HTML
+=== q_Disable_Autoplay_after_edit
+Отключать автовоспроизведение после редактирования
+=== q_HTML_tag_to_use_for_editable_field
+HTML-тег для использования для редактируемого поля:
+=== q_div_is_recommended
+div рекомендуется
+=== q_Shortcut_for_same_number_cloze
+Сочетание клавиш для заполнения пропусков с одинаковым номером:
+=== q_Default_is_CtrlShiftAltC
+По умолчанию Ctrl+Shift+Alt+C
+=== q_Image_Resizing
+Изменение размера изображения
+=== q_Use_image_resizing
+Использовать изменение размера изображения
+=== q_Even_when_unchecked_you_can_toggle
+Даже если не отмечено, вы можете переключать 'режим изменения размера изображения' с помощью сочетания клавиш ниже
+=== q_Dont_preserve_ratio
+Не сохранять соотношение
+=== q_Preserve_ratio_when_using_corner
+Сохранять соотношение сторон при использовании угла
+=== q_Always_preserve_ratio
+Всегда сохранять соотношение сторон
+=== q_Image_resizing_mode
+Режим изменения размера изображения:
+=== q_Shortcut_for_image_resize_mode
+Сочетание клавиш для режима изменения размера изображения:
+=== q_Pressing_this_shortcut_toggles_the_image_resize_mode
+Нажатие этого сочетания клавиш переключает режим изменения размера изображения
+=== q_Formatting
+Форматирование
+=== q_Fields
+Поля
+=== q_Check_the_boxes_to_make_the_fields_editable_while_reviewing
+Отметьте флажки, чтобы сделать поля редактируемыми во время просмотра
+=== q_Make_every_field_in_every_note_type_editable
+Сделать каждое поле в каждом типе записи редактируемым ✅
+=== q_About
+О программе
+=== q_Changes_will_take_effect_when_you_start_a_review_session
+Изменения вступят в силу после начала сеанса проверки
+=== q_Config_for
+Конфигурация для
+=== q_Advanced
+Расширенные настройки
+=== q_Restore_Defaults
+Сброс настроек
+=== q_Cancel
+Отмена
+=== q_Save
+Сохранить
+=== q_Invalid_Config_Please_fix
+Неверная конфигурация. Пожалуйста, исправьте следующую проблему в расширенном редакторе конфигурации.
+=== q_Invalid_Config
+Неверная конфигурация
+=== q_Quit_Config
+Выход из конфигурации
+=== q_Press_save_to_save_changes
+Нажмите «Сохранить», чтобы изменения сохранились
+=== q_Commands_remove_single
+Удалить пропуски у курсора или выделения
+=== q_Commands_remove_all
+Удалить всю разметку пропусков из поля
+=== q_Commands_remove_same_number
+Удалить все пропуски с одинаковым числом
+=== q_Commands_increment
+Увеличить число в пропуске на 1
+=== q_Commands_decrement
+Уменьшить число в пропуске на 1
+=== q_Commands_renumber
+Установить пропуск на определенное число (1-9)
+=== q_Commands_add_hint
+Добавить или отредактировать подсказку для пропуска
+=== q_Commands_remove_hint
+Удалить подсказку из пропуска
+=== q_Commands_word_count_hint
+Установить подсказку по количеству слов
+=== q_Commands_hint_from_selection
+Использовать выделенный текст в качестве подсказки
+=== q_Commands_split_cloze
+Разделить пропуски по выделенному тексту
+=== q_Commands_merge_clozes
+Объединить заполнения пропусков с одинаковыми номерами
+=== q_Commands_move_out_of_cloze
+Вывести выделенный текст из пропуска
+=== q_Commands_move_into_cloze
+Расширьте пропуски, включив в них выделенный текст
+=== q_Commands_image_to_cloze
+Создать пропуск из изображения
+=== q_Commands_jump_prev_cloze
+Перейти к предыдущему пропуску
+=== q_Commands_jump_next_cloze
+Перейти к следующему пропуску
+=== q_Commands_jump_to_beginning_cloze
+Переместите курсор к началу пропуска
+=== q_Commands_jump_to_end_cloze
+Переместите курсор к концу пропуска
+=== q_Commands_jump_to_beginning
+Переместить курсор в начало поля  (или [Ctrl+Home])
+=== q_Commands_jump_to_end
+Переместить курсор в конец поля (или [Ctrl+End])
+=== q_Commands_toggle_overlay
+Показать/скрыть окно информации с пропусками
+=== q_Commands_copy_cloze_content
+Скопировать внутренний текст пропуска
+=== q_Commands_preview_card
+Предварительный просмотр карточки
+=== q_Commands_find_replace
+Найти и заменить в пропусках
+=== q_Commands_suggest_clozes
+Выделить потенциальные варианты пропуска
+=== q_Commands_replay_question
+Показать лицевую сторону карты
+=== q_ERROR-Edit_Field_During_Review_Cloze
+ОШИБКА - Редактирование поля во время проверки с заполнением пропуска
+=== q_Field
+Поле
+=== q_not_found_in_note_Please_check_your_note_type
+не найдено в записи. Пожалуйста, проверьте тип вашей записи.
+=== q_Something_unexpected_occured_The_edit_may_not_have_been_saved
+Произошло нечто неожиданное. Возможно, изменения не были сохранены.
+=== q_Show_Cloze_Info_Overlay
+Показать информацию о заполнении пропуска
+=== q_show_HTML_in_overlay
+И ниже показать HTML код у курсора
+=== q_For_config
+Для конфига
+=== q_expected_value_is
+ожидаемое значение
+=== q_but_instead_encountered
+но вышло
+=== q_any_value_in_list
+любое значение в списке
+=== q_integer_number_greater_or_equal_to
+целое число больше или равно
+=== q_integer_number_lesser_or_equal_to
+целое число меньше или равно
+=== q_Browse
+Обзор
+=== q_Clear
+Очистить
+=== q_Select_text_overlapping_a_cloze
+Выделенный текст частично перекрывает пропуск
+=== q_Select_text_overlapping_a_cloze
+Выделите текст, перекрывающий пропуск.
+=== q_No_clozes_in_field
+В поле нет пропусков
+=== q_Selection_must_overlap_a_cloze
+Выделенный текст должен перекрывать пропуск
+=== q_Selection_overlaps_multiple_clozes
+Выделенный текст перекрывает несколько пропусков
+=== q_Selection_is_entirely_inside_cloze
+Выделенный текст полностью находится внутри пропуска
+=== q_warning_Empty
+Пусто
+=== q_warning_Long
+Длинное
+=== q_warning_No_clozes
+Нет пропусков
+=== q_Card_Preview
+Предпросмотр карт
+=== q_to_close
+для закрытия
+=== q_word
+слово
+=== q_words
+слова
+=== q_Type_to_search_commands
+Введите текст для поиска команд 
+=== q_No_matches_found_in_clozes
+Не найдено совпадений в пропусках
+=== q_Replaced_occurrencs
+Заменено вхождений
+=== q_Find_Replace_in_Clozes
+Найти и заменить в пропусках
+=== q_Find
+Найти
+=== q_Replace_with
+Заменить на
+=== q_Replace_All
+Заменить всё
+=== q_Card
+Карточка
+=== q_Press
+Нажмите
+=== q_to_set_number
+для установки числа
+=== q_No_clozes_found_in_field
+Пропуска не найдены в поле
+=== q_Place_cursor_inside_a_cloze
+Поместите курсор внутрь пропуска
+=== q_If_you_disable_this_feature_the_entire_HTML_code
+Если отключить эту функцию, будет вставлен весь HTML-код, что часто нежелательно. Временно переключает:
+=== q_In_the_advanced_settings_you_can_change_the_default_skip_addition
+В расширенных настройках можно изменить параметр пропуска по умолчанию:
+=== q_Close
+Закрыть
+=== q_Cloze_content_copied
+Содержимое пропуска скопировано
+=== q_Image_already_in_the_cloze
+Изображение уже находится в пропуске
+=== q_Image_added_to_cloze
+Изображение добавлено в пропуск
+=== q_Image_not_found_to_add_to_cloze
+Не найдено изображение для добавления в пропуск
+=== q_process_paste_true
+Обработка HTML включена
+=== q_process_paste_false
+Обработки HTML нет — вставить всё как есть

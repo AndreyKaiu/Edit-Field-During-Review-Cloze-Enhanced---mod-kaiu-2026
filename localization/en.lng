@@ -1,0 +1,319 @@
+!!! === $ $ ; setting, block separator, variable start and end, comment start marker
+=== q_Version
+Version
+=== q_about_text
+<div>
+Free and Open Source Software (FOSS)  distributed under the GNU AGPL v3 license.<br>
+It may also contain code that are licensed under a different license.<br>
+Please see the LICENSE file for more information.<br>
+</div>
+<br>
+<div>
+Author of this version: <a href="https://github.com/SumanthC10">github.com/SumanthC10</a><br>
+Co-author of this version: <a href="https://github.com/AndreyKaiu">github.com/AndreyKaiu</a><br>
+Original code authors:<br>
+addon <a href="https://ankiweb.net/shared/info/1020366288">'Edit Field During Review'</a> author <a href="https://github.com/kelciour/">github.com/kelciour</a>;<br>
+addon <a href="https://ankiweb.net/shared/info/385888438">'Edit Field During Review (Cloze)'</a> author <a href="https://github.com/BlueGreenMagick">github.com/BlueGreenMagick</a>;<br>
+</div>
+=== q_tutorial
+<h3>Quick Start Guide</h3>
+
+<h4>Initial Setup</h4>
+<div class="section">
+1. Open the add-on config and go to the <b>Fields</b> tab<br>
+2. For each note type, check the fields you want editable<br>
+3. Done! Now <span class="shortcut">Ctrl + Click</span> on any field to edit it
+</div>
+
+<h4>Command Palette</h4>
+<div class="section">
+<span class="shortcut">Ctrl+.</span> - Open searchable command palette with ALL actions
+</div>
+
+<h4>Cloze Removal</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+R</span> - Remove cloze at cursor/selection</li>
+<li><span class="shortcut">Ctrl+Shift+U</span> - Remove ALL clozes in field</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+R</span> - Remove clozes with same number</li>
+</ul>
+
+<h4>Cloze Numbering</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+Alt+K</span> - Increment number</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+J</span> - Decrement number</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+N</span> - Renumber (then press 1-9)</li>
+</ul>
+
+<h4>Hints</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+L</span> - Add/edit hint</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+L</span> - Remove hint</li>
+<li><span class="shortcut">Ctrl+Shift+W</span> - Word count hint</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+S</span> - Use selection as hint</li>
+</ul>
+
+<h4>Cloze Structure</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+S</span> - Split cloze at selection</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+M</span> - Merge same-number clozes</li>
+<li><span class="shortcut">Ctrl+Shift+O</span> - Move selection out of cloze</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+O</span> - Move selection into cloze</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+I</span> - Convert image to cloze</li>
+</ul>
+
+<h4>Navigation</h4>
+<ul>
+<li><span class="shortcut">Ctrl+[</span> - Jump to previous cloze</li>
+<li><span class="shortcut">Ctrl+]</span> - Jump to next cloze</li>
+<li><span class="shortcut">Ctrl+Shift+[</span> - Jump to beginning cloze</li>
+<li><span class="shortcut">Ctrl+Shift+]</span> - Jump to end cloze</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+,</span> - Jump to beginning (or [Ctrl+Home])</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+.</span> - Jump to end (or [Ctrl+End])</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+F</span> - Replay question (show front)</li>
+</ul>
+
+<h4>Tools</h4>
+<ul>
+<li><span class="shortcut">Ctrl+Shift+Alt+T</span> - Toggle cloze info overlay</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+Y</span> - Copy cloze content (and select)</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+P</span> - Preview card</li>
+<li><span class="shortcut">Ctrl+Shift+Alt+G</span> - Find & replace in clozes</li>
+<li><span class="shortcut">Ctrl+Shift+G</span> - Suggest cloze candidates</li>
+</ul>
+
+<p style="text-align: center; color: #888; margin-top: 20px;">
+Tip: Use <span class="shortcut">Ctrl+.</span> to search all commands!
+</p>
+
+<h4>Some important changes and additions</h4>
+<p>
+The addon's source code primarily supported only plain text within cloze.<br>
+This version of the addon includes changes to better support HTML code within cloze.<br>
+Processing of inserted text for images and HTML can be toggled with Alt+V. This is important to know so that you can insert specific parts of HTML text.<br>
+You can display information about cloze completion and partially view the HTML code near the cursor to better understand the actual formatting.<br>
+The `removeformatALL` command (Ctrl + Shift + -) has been added, which removes any tags (if no text is selected, it removes one tag). The standard `removeformat` command also exists, but it only removes basic tags, not all.<br>
+The ability to enter a non-breaking space character (Ctrl + Shift + Space) has been added, as this is sometimes needed.<br>
+Commands for entering tags `&lt;w0&gt;...&lt;w9&gt;` have been added for your own styles, or you can use them for your own tags. The $$ symbols indicate the insertion point for the text you are selecting.<br>
+<br>
+Due to the large number of commands and the complexity of the HTML code, some formatting errors are possible. Check the HTML code at the cursor (the panel at the bottom of the screen: Ctrl + Shift + Alt + T).<br>
+</p>
+=== q_Help
+Help
+=== q_General
+General
+=== q_Ctrl_Click_to_edit_field
+Ctrl + Click to edit field (Cmd on mac)
+=== q_If_not_checked_there_is
+If not checked, there is no need to press Ctrl
+=== q_Show_a_blue_outline
+Show a blue outline around the field when editing
+=== q_Process_pasted_content_for_images_and_HTML
+Process pasted content for images and HTML
+=== q_Disable_Autoplay_after_edit
+Disable Autoplay after edit
+=== q_HTML_tag_to_use_for_editable_field
+HTML tag to use for editable field:
+=== q_div_is_recommended
+div is recommended
+=== q_Shortcut_for_same_number_cloze
+Shortcut for same number cloze:
+=== q_Default_is_CtrlShiftAltC
+Default is Ctrl+Shift+Alt+C
+=== q_Image_Resizing
+Image Resizing
+=== q_Use_image_resizing
+Use image resizing
+=== q_Even_when_unchecked_you_can_toggle
+Even when unchecked, you can toggle the 'image resize mode' with below shortcut
+=== q_Dont_preserve_ratio
+Don't preserve ratio
+=== q_Preserve_ratio_when_using_corner
+Preserve ratio when using corner
+=== q_Always_preserve_ratio
+Always preserve ratio
+=== q_Image_resizing_mode
+Image resizing mode:
+=== q_Shortcut_for_image_resize_mode
+Shortcut for image resize mode:
+=== q_Pressing_this_shortcut_toggles_the_image_resize_mode
+Pressing this shortcut toggles the image resize mode
+=== q_Formatting
+Formatting
+=== q_Fields
+Fields
+=== q_Check_the_boxes_to_make_the_fields_editable_while_reviewing
+Check the boxes to make the fields editable while reviewing
+=== q_Make_every_field_in_every_note_type_editable
+Make every field in every note type editable ✅
+=== q_About
+About
+=== q_Changes_will_take_effect_when_you_start_a_review_session
+Changes will take effect when you start a review session
+=== q_Config_for
+Config for
+=== q_Advanced
+Advanced
+=== q_Restore_Defaults
+Restore Defaults
+=== q_Cancel
+Cancel
+=== q_Save
+Save
+=== q_Invalid_Config_Please_fix
+Invalid Config. Please fix the following issue in the advanced config editor.
+=== q_Invalid_Config
+Invalid Config
+=== q_Quit_Config
+Quit Config
+=== q_Press_save_to_save_changes
+Press save to save changes
+=== q_Commands_remove_single
+Remove cloze at cursor or selection
+=== q_Commands_remove_all
+Remove all cloze markup from field
+=== q_Commands_remove_same_number
+Remove all clozes with same number
+=== q_Commands_increment
+Increase cloze number by 1
+=== q_Commands_decrement
+Decrease cloze number by 1
+=== q_Commands_renumber
+Set cloze to specific number (1-9)
+=== q_Commands_add_hint
+Add or edit hint for cloze
+=== q_Commands_remove_hint
+Remove hint from cloze
+=== q_Commands_word_count_hint
+Set hint to word count
+=== q_Commands_hint_from_selection
+Use selected text as hint
+=== q_Commands_split_cloze
+Split cloze at selection
+=== q_Commands_merge_clozes
+Merge same-number clozes
+=== q_Commands_move_out_of_cloze
+Move selection out of cloze
+=== q_Commands_move_into_cloze
+Expand cloze to include selection
+=== q_Commands_image_to_cloze
+Wrap image in cloze
+=== q_Commands_jump_prev_cloze
+Move cursor to previous cloze
+=== q_Commands_jump_next_cloze
+Move cursor to next cloze
+=== q_Commands_jump_to_beginning_cloze
+Move cursor to beginning cloze
+=== q_Commands_jump_to_end_cloze
+Move cursor to end cloze
+=== q_Commands_jump_to_beginning
+Move cursor to start of field (or [Ctrl+Home])
+=== q_Commands_jump_to_end
+Move cursor to end of field (or [Ctrl+End])
+=== q_Commands_toggle_overlay
+Show/hide cloze info overlay
+=== q_Commands_copy_cloze_content
+Copy inner text of cloze
+=== q_Commands_preview_card
+Preview how card will look
+=== q_Commands_find_replace
+Find/replace in clozes only
+=== q_Commands_suggest_clozes
+Highlight potential cloze candidates
+=== q_Commands_replay_question
+Show front of card
+=== q_ERROR-Edit_Field_During_Review_Cloze
+ERROR - Edit Field During Review Cloze
+=== q_Field
+Field
+=== q_not_found_in_note_Please_check_your_note_type
+not found in note. Please check your note type.
+=== q_Something_unexpected_occured_The_edit_may_not_have_been_saved
+Something unexpected occured. The edit may not have been saved.
+=== q_Show_Cloze_Info_Overlay
+Show Cloze Info Overlay
+=== q_show_HTML_in_overlay
+And below show the HTML code at the cursor
+=== q_For_config
+For config
+=== q_expected_value_is
+expected value is
+=== q_but_instead_encountered
+but instead encountered
+=== q_any_value_in_list
+any value in list
+=== q_integer_number_greater_or_equal_to
+integer number greater or equal to
+=== q_integer_number_lesser_or_equal_to
+integer number lesser or equal to
+=== q_Browse
+Browse
+=== q_Clear
+Clear
+=== q_Select_text_overlapping_a_cloze
+Select text overlapping a cloze
+=== q_Select_text_overlapping_a_cloze
+Select text overlapping a cloze
+=== q_No_clozes_in_field
+No clozes in field
+=== q_Selection_must_overlap_a_cloze
+Selection must overlap a cloze
+=== q_Selection_overlaps_multiple_clozes
+Selection overlaps multiple clozes
+=== q_Selection_is_entirely_inside_cloze
+Selection is entirely inside cloze
+=== q_warning_Empty
+Empty
+=== q_warning_Long
+Long
+=== q_warning_No_clozes
+No clozes
+=== q_Card_Preview
+Card Preview
+=== q_to_close
+to close
+=== q_word
+word
+=== q_words
+words
+=== q_Type_to_search_commands
+Type to search commands
+=== q_No_matches_found_in_clozes
+No matches found in clozes
+=== q_Replaced_occurrencs
+Replaced occurrencs
+=== q_Find_Replace_in_Clozes
+Find & Replace in Clozes
+=== q_Find
+Find
+=== q_Replace_with
+Replace with
+=== q_Replace_All
+Replace All
+=== q_Card
+Card
+=== q_Press
+Press
+=== q_to_set_number
+to set number
+=== q_No_clozes_found_in_field
+No clozes found in field
+=== q_Place_cursor_inside_a_cloze
+Place cursor inside a cloze
+=== q_If_you_disable_this_feature_the_entire_HTML_code
+Disabling this feature will insert all HTML code, which is often undesirable. Temporarily toggles:
+=== q_In_the_advanced_settings_you_can_change_the_default_skip_addition
+In the advanced settings, you can change the default skip addition:
+=== q_Close
+Close
+=== q_Cloze_content_copied
+Cloze content copied
+=== q_Image_already_in_the_cloze
+Image already in the cloze
+=== q_Image_added_to_cloze
+Image added to cloze 
+=== q_Image_not_found_to_add_to_cloze
+Image not found to add to cloze
+=== q_process_paste_true
+HTML processing enabled
+=== q_process_paste_false
+No HTML processing - paste everything as is
