@@ -1,22 +1,22 @@
 Modifying the addon code "Edit Field During Review (Cloze) Enhanced".
 
-Оригинальный аддон [https://ankiweb.net/shared/info/1757654367](https://ankiweb.net/shared/info/1757654367).
+Original addon [https://ankiweb.net/shared/info/1757654367](https://ankiweb.net/shared/info/1757654367).
 
-Автор на связь не выходит, почта не указана на github, а по прошествии 2 недель аккаунт https://github.com/SumanthC10 уже не доступен.
+The author hasn't contacted me, the email address isn't listed on GitHub, and after two weeks, the account https://github.com/SumanthC10 is no longer accessible.
 
-Будем считать автором аддона: https://github.com/SumanthC10. А я вполне доволен и ролью соавтора, так многие идеи не мои.
+We'll consider https://github.com/SumanthC10 the add-on's author. I'm quite happy with being a co-author, as many of the ideas weren't mine.
 
-Мне надо было исправить аддон, переделать на возможность работы с HTML кодом в cloze. Встроить свои функции в этот аддон и конечно же сделать возможность перевода аддона на другой язык.
+I needed to fix the add-on, redesign it to work with HTML code in Cloze, integrate my own functions into the add-on, and, of course, make it translatable.
 
-Если вы переведете аддон на свой язык, то высылайте мне файл "*.lng" и я добавлю, чтобы и другие могли это использовать.
+If you translate the add-on into your language, please send me the *.lng file, and I'll add it so others can use it.
 
-Некоторые функции попробовал показать ниже (не более 5 минут и качество такое, чтобы вложиться в требования github для 1 файла).
+I tried to demonstrate some of the functions below (no more than 5 minutes, and the quality was such that it fits within GitHub's requirements for a single file).
 
 ![Edit field d](https://github.com/user-attachments/assets/e432274e-9fdb-4111-b3f3-508f996c4598)
 
-Как этим пользоваться? Читаем тут [https://ankiweb.net/shared/info/385888438](https://ankiweb.net/shared/info/385888438)
+How to use it? Read here [https://ankiweb.net/shared/info/385888438](https://ankiweb.net/shared/info/385888438)
 
-++++Quick Start Guide++++
+#### Quick Start Guide
 
 **Initial Setup**
 
