@@ -1,14 +1,8 @@
 {
-    "name": "Edit Field During Review (Cloze) Enhanced - mod kaiu 2026",
-    "human_version": "6.23.1",
-    "conflicts": [
-        "385888438",
-        "1020366288",
-        "1757654367"
-    ],
-    "mod": 1769977618,
+    "name": "Edit Field During Review Cloze Enhanced - mod kaiu 2026",
+    "mod": 1783264623,
     "min_point_version": 1,
-    "max_point_version": 1,
+    "max_point_version": 260500,
     "branch_index": 0,
-    "disabled": false    
+    "disabled": false
 }

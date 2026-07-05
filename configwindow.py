@@ -81,7 +81,7 @@ def general_tab(conf_window: ConfigWindow) -> None:
         q("q_Shortcut_for_same_number_cloze"),
         tooltip=q("q_Default_is_CtrlShiftAltC"),
     )
-    tab.text(f"{q("q_In_the_advanced_settings_you_can_change_the_default_skip_addition")} {conf.get('shortcuts.cloze', 'Ctrl + Shift + C')}", bold=False)
+    tab.text(f"""{q("q_In_the_advanced_settings_you_can_change_the_default_skip_addition")} {conf.get('shortcuts.cloze', 'Ctrl + Shift + C')}""", bold=False)
 
     tab.space(20)
     tab.text(q("q_Image_Resizing"), bold=True)
