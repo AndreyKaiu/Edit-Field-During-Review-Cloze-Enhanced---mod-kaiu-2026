@@ -9,4 +9,4 @@ class InvalidConfigValueError(Exception):
         self.value = value
 
     def __str__(self) -> str:
-        return f"{q("q_For_config")}: {self.key}\n{q("q_expected_value_is")}: {self.expected}\n{q("q_but_instead_encountered")}: {self.value}"
+        return f"""{q("q_For_config")}: {self.key}\n{q("q_expected_value_is")}: {self.expected}\n{q("q_but_instead_encountered")}: {self.value}"""

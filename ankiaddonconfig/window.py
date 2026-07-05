@@ -28,7 +28,7 @@ class ConfigWindow(QDialog):
         self._on_close_hook: List[Callable[[], None]] = []
         self.geom_key = f"addonconfig-{conf.addon_name}"
 
-        self.setWindowTitle(f"{q("q_Config_for")} {conf.addon_name}")
+        self.setWindowTitle(f"""{q("q_Config_for")} {conf.addon_name}""")
         self.setup()
 
     def setup(self) -> None:
@@ -317,11 +317,11 @@ class ConfigLayout(QBoxLayout):
                 raise InvalidConfigValueError(key, "number", val)
             if minimum is not None and val < minimum:
                 raise InvalidConfigValueError(
-                    key, f"{q("q_integer_number_greater_or_equal_to")} {minimum}", val
+                    key, f"""{q("q_integer_number_greater_or_equal_to")} {minimum}""", val
                 )
             if maximum is not None and val > maximum:
                 raise InvalidConfigValueError(
-                    key, f"{q("q_integer_number_lesser_or_equal_to")} {maximum}", val
+                    key, f"""{q("q_integer_number_lesser_or_equal_to")} {maximum}""", val
                 )
             spin_box.setValue(val)
 
