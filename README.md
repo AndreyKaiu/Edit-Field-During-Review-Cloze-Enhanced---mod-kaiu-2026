@@ -122,7 +122,9 @@ Due to the large number of commands and the complexity of the HTML code, some fo
 I don't get notified of your reviews, and properly troubleshooting an issue through them is nearly impossible. Instead, please either use the [issue tracker (preferred),](https://github.com/AndreyKaiu/Edit-Field-During-Review-Cloze-Enhanced---mod-kaiu-2026/issues) add-on, or just message me at [andreykaiu@gmail.com.](mailto:andreykaiu@gmail.com) Constructive feedback and suggestions are always welcome!
 
 **VERSIONS**
-- 6.23.1, date: 2026-02-16.
+
+- 6.23.1, date: 2026-07-05. For Anki 24.04.1
+- 6.23.1, date: 2026-02-16. 
 
 
 
